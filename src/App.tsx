@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import { Image, Button, Link } from '@fluentui/react-components';
+import { Image, Link } from '@fluentui/react-components';
 import { mergeClasses} from '@fluentui/react-components';
 import useStaticStyles from './index.styles';
 import useAppStyles from './App.styles';
