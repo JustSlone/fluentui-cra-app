@@ -1,23 +1,28 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import { Image, Button, Link } from '@fluentui/react-components';
+import { mergeClasses} from '@fluentui/react-components';
+import useStaticStyles from './index.styles';
+import useAppStyles from './App.styles';
 
 function App() {
+  useStaticStyles();
+  const classes = useAppStyles();
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+    <div className={classes.app}>
+      <header className={classes.appHeader}>
+        <Image src={logo} className={mergeClasses(classes.appLogo, classes.appLogoSpin)} alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
+        <Link
+          className={classes.appLink}
+          href="https://reactjs.org"          
           target="_blank"
           rel="noopener noreferrer"
         >
           Learn React
-        </a>
+        </Link>
       </header>
     </div>
   );
