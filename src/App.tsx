@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
-import { Image, Link } from '@fluentui/react-components';
-import { mergeClasses} from '@fluentui/react-components';
+import { Button, Image, Link } from '@fluentui/react-components';
+import { mergeClasses } from '@fluentui/react-components';
 import useStaticStyles from './index.styles';
 import useAppStyles from './App.styles';
 
@@ -15,14 +15,25 @@ function App() {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
-        <Link
-          className={classes.appLink}
-          href="https://reactjs.org"          
+        <Button
+          className={classes.appLinkButton}
+          as="a"
+          href="https://reactjs.org"
           target="_blank"
           rel="noopener noreferrer"
-        >
+          appearance="primary" size="large">
           Learn React
+        </Button>
+        <br/>
+        <Link
+           className={classes.appLink}
+           href="https://aka.ms/fluentui-storybook"
+           target="_blank"
+           rel="noopener noreferrer"
+        >
+          Become Fluent
         </Link>
+        <br />
       </header>
     </div>
   );

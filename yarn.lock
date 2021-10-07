@@ -895,13 +895,6 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.12.13"
 
-"@babel/plugin-syntax-jsx@^7.14.5":
-  version "7.14.5"
-  resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-jsx/-/plugin-syntax-jsx-7.14.5.tgz#000e2e25d8673cce49300517a3eda44c263e4201"
-  integrity sha512-ohuFIsOMXJnbOMRfX7/w7LocdR6R7whhuRD4ax8IipLcLPlZGJKkBxgHp++U4N/vKyU16/YDQr2f5seajD3jIw==
-  dependencies:
-    "@babel/helper-plugin-utils" "^7.14.5"
-
 "@babel/plugin-syntax-logical-assignment-operators@^7.10.4", "@babel/plugin-syntax-logical-assignment-operators@^7.8.3":
   version "7.10.4"
   resolved "https://registry.yarnpkg.com/@babel/plugin-syntax-logical-assignment-operators/-/plugin-syntax-logical-assignment-operators-7.10.4.tgz#ca91ef46303530448b906652bac2e9fe9941f699"
@@ -1850,7 +1843,7 @@
     "@babel/helper-plugin-utils" "^7.10.4"
     "@babel/plugin-transform-typescript" "^7.12.1"
 
-"@babel/preset-typescript@^7.10.4":
+"@babel/preset-typescript@^7.10.4", "@babel/preset-typescript@^7.15.0":
   version "7.15.0"
   resolved "https://registry.yarnpkg.com/@babel/preset-typescript/-/preset-typescript-7.15.0.tgz#e8fca638a1a0f64f14e1119f7fe4500277840945"
   integrity sha512-lt0Y/8V3y06Wq/8H/u0WakrqciZ7Fz7mwPDHWUJAXlABL5hiUG42BNlRXiELNjeWjO5rWmnNKlx+yzJvxezHow==
@@ -1997,7 +1990,7 @@
     minimatch "^3.0.4"
     strip-json-comments "^3.1.1"
 
-"@fluentui/babel-make-styles@^9.0.0-alpha.28":
+"@fluentui/babel-make-styles@9.0.0-beta.1":
   version "9.0.0-beta.1"
   resolved "https://registry.yarnpkg.com/@fluentui/babel-make-styles/-/babel-make-styles-9.0.0-beta.1.tgz#9e96aebc50a4194963efa0faac636b10ea75e35d"
   integrity sha512-0SRy2kQqyWaJscxDdSiLAmXIuRCK318f1bbd1qO9LwfBPBjCxQ+CcdjtogkB9UTOBTbkBvwIVsGiruZSn5ufAQ==
@@ -2019,15 +2012,17 @@
   resolved "https://registry.yarnpkg.com/@fluentui/keyboard-keys/-/keyboard-keys-9.0.0-beta.1.tgz#bee2b6b8c20c940242b6c8c885201dfbb870945e"
   integrity sha512-eGKEzdyIep7KZPoKwHVfcDR3hKuSnI0iDqZGYrIOVWYVr1aD9uZ3JXFK2ad8DZtOGnxgK3/pOvAfqFo61LoRjQ==
 
-"@fluentui/make-styles-webpack-loader@^9.0.0-alpha.1":
-  version "9.0.0-alpha.1"
-  resolved "https://registry.yarnpkg.com/@fluentui/make-styles-webpack-loader/-/make-styles-webpack-loader-9.0.0-alpha.1.tgz#ec9e725a192fac0d4aad8861c7ecffd8f38783a0"
-  integrity sha512-gNPPCMM4Ge95yTXUe2KwovUJrIwqe4HGntLrwQr5U97oGaGPRpYnT+0GK0y5JsXjrBou97CPLg41U2ywEaCOXQ==
+"@fluentui/make-styles-webpack-loader@^9.0.0-beta.1":
+  version "9.0.0-beta.1"
+  resolved "https://registry.yarnpkg.com/@fluentui/make-styles-webpack-loader/-/make-styles-webpack-loader-9.0.0-beta.1.tgz#d041fa8275c06c14c2d120be71ea64d1b199cd82"
+  integrity sha512-PjS5tH+6mithsSkdeEfDJU2V65VawYDDtr7M2OLDdv/HSf0javXIZOyuMx6wQgjwlTJEa/VslIJS71zb/VUfUA==
   dependencies:
     "@babel/core" "^7.10.4"
-    "@fluentui/babel-make-styles" "^9.0.0-alpha.28"
-    "@linaria/babel-preset" "^3.0.0-beta.7"
+    "@fluentui/babel-make-styles" "9.0.0-beta.1"
+    "@linaria/babel-preset" "^3.0.0-beta.13"
     enhanced-resolve "^5.8.2"
+    loader-utils "^2.0.0"
+    schema-utils "^3.1.1"
     tslib "^2.1.0"
 
 "@fluentui/make-styles@9.0.0-beta.1":
@@ -2548,7 +2543,7 @@
     "@types/yargs" "^16.0.0"
     chalk "^4.0.0"
 
-"@linaria/babel-preset@^3.0.0-beta.13", "@linaria/babel-preset@^3.0.0-beta.7":
+"@linaria/babel-preset@^3.0.0-beta.13":
   version "3.0.0-beta.13"
   resolved "https://registry.yarnpkg.com/@linaria/babel-preset/-/babel-preset-3.0.0-beta.13.tgz#bce5c199bfd72f754fb962dc72c292f076150b72"
   integrity sha512-UeurIwmORp1lG+f69bKquRug7ZFVSrQha6TJWvHmGQIFwFx5qpMCXJLhOp2dUpM4y7/NhbKYXqj58RtG3wi4ZQ==
@@ -2959,6 +2954,11 @@
   version "7.0.7"
   resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.7.tgz#98a993516c859eb0d5c4c8f098317a9ea68db9ad"
   integrity sha512-cxWFQVseBm6O9Gbw1IWb8r6OS4OhSt3hPZLkFApLjM8TEXROBuQGLAH2i2gZpcXdLBIrpXuTDhH7Vbm1iXmNGA==
+
+"@types/json-schema@^7.0.8":
+  version "7.0.9"
+  resolved "https://registry.yarnpkg.com/@types/json-schema/-/json-schema-7.0.9.tgz#97edc9037ea0c38585320b28964dde3b39e4660d"
+  integrity sha512-qcUXuemtEu+E5wZSJHNxUXeCZhAfXKQ41D+duX+VYPde7xyEVZci+/oXKJL13tnRs9lR2pr4fod59GT6/X1/yQ==
 
 "@types/json5@^0.0.29":
   version "0.0.29"
@@ -11082,6 +11082,15 @@ schema-utils@^3.0.0:
   integrity sha512-6D82/xSzO094ajanoOSbe4YvXWMfn2A//8Y1+MUqFAJul5Bs+yn36xbK9OtNDcRVSBJ9jjeoXftM6CfztsjOAA==
   dependencies:
     "@types/json-schema" "^7.0.6"
+    ajv "^6.12.5"
+    ajv-keywords "^3.5.2"
+
+schema-utils@^3.1.1:
+  version "3.1.1"
+  resolved "https://registry.yarnpkg.com/schema-utils/-/schema-utils-3.1.1.tgz#bc74c4b6b6995c1d88f76a8b77bea7219e0c8281"
+  integrity sha512-Y5PQxS4ITlC+EahLuXaY86TXfR7Dc5lw294alXOq86JAHCihAIZfqv8nNCWvaEJvaC51uN9hbLGeV0cFBdH+Fw==
+  dependencies:
+    "@types/json-schema" "^7.0.8"
     ajv "^6.12.5"
     ajv-keywords "^3.5.2"
 
