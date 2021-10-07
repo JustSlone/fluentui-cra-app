@@ -2,13 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { FluentProvider, webLightTheme, webDarkTheme, teamsLightTheme, teamsDarkTheme} from '@fluentui/react-components';
+import { FluentProvider, webLightTheme, webDarkTheme, teamsLightTheme, teamsDarkTheme, Theme, teamsHighContrastTheme, webHighContrastTheme } from '@fluentui/react-components';
+import { ThemeSwitcher } from './ThemeSwitcher'
 
 ReactDOM.render(
   <React.StrictMode>
-    <FluentProvider theme={webLightTheme}>
+    <ThemeSwitcher>
       <App />
-    </FluentProvider>
+    </ThemeSwitcher>
   </React.StrictMode>,
   document.getElementById('root')
 );

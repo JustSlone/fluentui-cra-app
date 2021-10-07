@@ -4,7 +4,7 @@ export default makeStyles({
     app: {
         textAlign: 'center',
     },
-    appLogo: {
+    appLogo: {        
         height: '40vmin',
         pointerEvents: 'none',
     },
@@ -20,7 +20,20 @@ export default makeStyles({
                 to: {
                     transform: 'rotate(360deg)'
                 },
-            }
+            },            
+        },
+        '@media screen and (prefers-reduced-motion: no-preference) and (max-width: 992px)': {
+            animationIterationCount: 'infinite',
+            animationDuration: '4s',
+            animationTimingFunction: 'linear',
+            animationName: {
+                from: {
+                    transform: 'rotate(360deg)'
+                },
+                to: {
+                    transform: 'rotate(0deg)'
+                },
+            },
         }
     },
     appHeader: theme => ({
@@ -32,9 +45,6 @@ export default makeStyles({
         justifyContent: 'center',
         fontSize: 'calc(10px + 2vmin)',
         color: theme.colorNeutralForeground1,
-        '@media screen and (max-width: 992px)': {
-            backgroundColor: 'rgb(17 18 20)'
-        }
     }),
     appLinkButton: {
         textDecoration: 'none'
