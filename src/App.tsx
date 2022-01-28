@@ -1,29 +1,12 @@
-import React, { useState } from "react";
+import React from "react";
 import logo from "./logo.svg";
 import {
   Button,
   Image,
   Link,
-  MenuButton,
-  Menu,
-  MenuTrigger,
-  MenuList,
-  MenuItem,
-  MenuPopover,
-  MenuProps,
-  MenuOpenEvents,
-  MenuOpenChangeData,
 } from "@fluentui/react-components";
 import {
-  makeStyles,
   mergeClasses,
-  Theme,
-  teamsLightTheme,
-  teamsDarkTheme,
-  teamsHighContrastTheme,
-  webLightTheme,
-  webDarkTheme,
-  webHighContrastTheme,
 } from "@fluentui/react-components";
 import useStaticStyles from "./index.styles";
 import useAppStyles from "./App.styles";

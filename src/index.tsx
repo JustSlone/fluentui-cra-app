@@ -2,7 +2,6 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import { FluentProvider, webLightTheme, webDarkTheme, teamsLightTheme, teamsDarkTheme, Theme, teamsHighContrastTheme, webHighContrastTheme } from '@fluentui/react-components';
 import { ThemeSwitcher } from './ThemeSwitcher'
 
 ReactDOM.render(
