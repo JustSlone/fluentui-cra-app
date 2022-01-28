@@ -4,7 +4,9 @@
   "private": true,
   "homepage": "https://justslone.github.io/fluentui-cra-app",
   "dependencies": {
-    "@fluentui/react-components": "9.0.0-beta.1",
+    "@fluentui/react-components": "^9.0.0-beta.5",
+    "@griffel/core": "^1.0.7",
+    "@griffel/react": "^1.0.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -47,8 +49,9 @@
     ]
   },
   "devDependencies": {
+    "@babel/core": "^7.16.12",
     "@babel/preset-typescript": "^7.15.0",
-    "@fluentui/make-styles-webpack-loader": "^9.0.0-beta.1",
+    "@griffel/webpack-loader": "^2.0.0",
     "gh-pages": "^3.2.3",
     "react-app-rewired": "^2.1.8",
     "source-map-explorer": "^2.5.2"
