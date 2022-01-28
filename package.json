@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://justslone.github.io/fluentui-cra-app",
   "dependencies": {
-    "@fluentui/react-components": "^9.0.0-beta.5",
+    "@fluentui/react-components": "0.0.0-nightlye0b8e1fa6920220128.1",
     "@griffel/core": "^1.0.7",
     "@griffel/react": "^1.0.0",
     "@testing-library/jest-dom": "^5.11.4",

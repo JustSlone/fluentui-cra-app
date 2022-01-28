@@ -1,7 +1,7 @@
 import React from "react";
 import logo from "./logo.svg";
 import { Button, Image, Link } from "@fluentui/react-components";
-import { mergeClasses } from "@fluentui/react-components";
+import { mergeClasses } from "@griffel/react";
 import useStaticStyles from "./index.styles";
 import useAppStyles from "./App.styles";
 
@@ -13,7 +13,6 @@ export const App: React.FC = () => {
   //     bluBox: { background: "white", color: 'blue' },
   //  }
   //  )();
-  console.log(mergeClasses(classes.appLogo, classes.appLogoSpin));
   return (
     <div className={classes.app}>
       <header className={classes.appHeader}>

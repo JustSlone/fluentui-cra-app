@@ -1,4 +1,4 @@
-import { makeStaticStyles } from "@fluentui/react-components";
+import { makeStaticStyles } from "@griffel/react";
 
 export default makeStaticStyles({
   body: {
